@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+*{
+    font-family: 'Rubik';
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    padding: 30px 100px;
+    color: #323332;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.btns{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inputpkm{
+    padding: 0 10px;
+    width: 270px;
+    height: 25px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #797979;
+}
+
+.inputtypes{
+    padding: 0 10px;
+    width: 100px;
+    height: 25px;
+    color: #797979;
+    background-color: transparent;
+}
+
+.cards{
+    margin-top: 30px;
+    width: 100%;
+    height: max-content;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    row-gap: 30px;  
+}
+
+.card{
+    position: relative;
+    width: 230px;
+    height: 310px;
+    background-color: #F7F7F7;
+    background-color: #fffbfb;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.card h2{
+    color: #323332;
+}
+
+.top-color{
+    width: 100%;
+    height: 44%;
+    background-color: #797979;
+}
+
+.card:hover{
+    animation: floattop .2s ease-in;
+}
+
+
+@keyframes pushdown {
+    50%{
+        height: 48%;
+    }
+
+    100%{
+        height: 44%;
+    }
+}
+
+
+@keyframes floattop {
+    to{
+        margin-top: 0px;
+    }
+
+    50%{
+        margin-top: -10px;
+    }
+  
+}
+
+
+@keyframes floatleft {
+    to{
+        margin-top: 0px;
+    }
+
+    50%{
+        margin-left: -10px;
+    }
+  
+}
+
+.top-color h3{
+    font-size: 25px;
+    text-align: left;
+    margin: 7px 10px;
+    font-family: 'Roboto Serif';
+    font-weight: 400;
+    color: #323332;
+}
+
+.circleimg{
+    width: 140px;
+    height: 140px;
+    background-color: #E7E7E7;
+    background-color: #ebe9e9;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 52px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+
+}
+
+.circleimg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.top-color.grass{
+    background-color: #B1DA95;
+}
+
+.top-color.water{
+    background-color: #82C1FF;
+}
+
+.top-color.electric{
+    background-color: #f1ee5c;
+}
+
+.top-color.fire{
+    background-color: #e35454;
+}
+
+.top-color.poison{
+    background-color: #B695DA;
+}
+
+.top-color.bug{
+    background-color: #6A8368;
+}
+
+.top-color.normal{
+    background-color: #F7EAC5;
+}
+
+.top-color.ground{
+    background-color: #A47E50;
+}
+
+.top-color.fairy{
+    background-color: #FFC9FF;
+}
+
+.top-color.fighting{
+    background-color: #E9974A;   
+}
+
+.top-color.psychic{
+    background-color: #C867BD;
+}
+
+.top-color.rock{
+    background-color: #C6BF93;
+}
+
+.top-color.ghost{
+    background-color: #6a4b7c;
+}
+
+.top-color.ice{
+    background-color: #BEECFF;
+}
+
+.top-color.dragon{
+    background-color: #5665B0;
+}
+
+.top-color.dark{
+    background-color: #484A46;
+}
+
+.top-color.steel{
+    background-color: #9db5be;
+}
+
+span{
+    padding:  0px 7px;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+span.grass{
+    background-color: #85D267;
+    
+}
+
+span.water{
+    background-color: #79b3ed;
+}
+
+span.electric{
+    background-color: #e2e076;
+}
+
+span.poison{
+    background-color: #B695DA;
+}
+
+span.fire{
+    background-color: #E16464;
+}
+
+span.poison{
+    background-color: #B463E3;
+}
+
+span.bug{
+    background-color: #596d58;
+}
+
+span.normal{
+    background-color: #dbcfa8;
+}
+
+span.ground{
+    background-color: #886842;
+}
+
+span.fairy{
+    background-color: #e4b2e4;
+}
+
+span.fighting{
+    background-color: #c5803f;
+}
+
+span.psychic{
+    background-color: #BB60B0;
+}
+
+span.rock{
+    background-color: #C6BF93;
+}
+
+span.ghost{
+    background-color: #6a4b7c;
+}
+
+span.ice{
+    background-color: #aedcf0;
+}
+
+span.dragon{
+    background-color: #505ea3;
+}
+
+span.dark{
+    background-color: #40423e;
+}
+
+span.steel{
+    background-color: #9fb6c0;
+}
+
+span.flying{
+    background-color: #8db3bb;
+}
+
+#DL{
+    position: absolute;
+    top: 20px;
+    right: 110px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+body.dark{
+    background-color: #323332;
+    color: #ebeaea;
+}
+
+
+.inputpkm.dark{
+    border: 2px solid #ebeaea;
+    color: #ebeaea;
+}
+
+.card.dark{
+    background-color: #40423e;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(179, 175, 175, 0.25);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(179, 175, 175, 0.25);
+    box-shadow: 2px 2px 2px 0px rgba(179, 175, 175, 0.25);
+}
+
+.titlePKM{
+    text-transform: capitalize;
+}
+
+
+.titlePKM.dark {
+    color: rgb(238, 236, 236);
+}
+
+.circleimg.dark{
+    background-color: #343434;
+}
+
+
+@media screen and (max-width: 1480px) {
+    body{
+        padding: 30px 30px;
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+    body{
+        padding: 30px 10px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    body{
+        padding: 30px 10px;
+    }
+
+    .cards{
+        background-color: transparent;
+        grid-template-columns: repeat(auto-fill, minmax(230px, max-content));
+        gap: 0px;
+        row-gap: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 725px) {
+
+    .cards{
+        background-color: transparent;
+        grid-template-columns: repeat(auto-fill, minmax(200px, max-content));
+        row-gap: 30px;
+        justify-content: space-around;
+
+    }
+    
+    .card{
+        position: relative;
+        width: 200px; /*230px*/
+        height: 275px; /*310px*/
+        padding-bottom: 25px;
+    }
+
+    .top-color{
+        width: 100%;
+        height: 44%;
+    }
+
+    .card h2{
+        font-size: 24px;
+    }
+
+    .top-color h3{
+        font-size: 25px;
+        margin: 7px 10px;
+        font-weight: 400;
+    }
+
+    .circleimg{
+        width: 120px;
+        height: 120px;
+        margin-top: 45px;
+    }
+
+    span{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    body{
+        padding: 0 20px;
+    }
+
+    .card:hover{
+        animation: floatleft .2s ease-in;
+    }
+
+    .cards{
+        background-color: transparent;
+        grid-template-columns: repeat(auto-fill, minmax(100%,1fr));
+        gap: 0px;
+        row-gap: 30px;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: 100%; /*230px*/
+        height: 130px; /*310px*/
+        border-radius: 8px;
+        padding-bottom: 0px;
+    }
+
+        
+    .top-color h3{
+        font-size: 24px;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0px;
+        padding: 15px 20px;
+        text-align: right;
+    }
+
+    .card h2{
+        line-height: 20px;
+        margin: 0;
+    }
+
+    .top-color{
+        width: 33%;
+        max-width: 130px;
+        height: 100%;
+    }
+        
+    .circleimg{
+        width: 100px;
+        height: 100px;
+        margin-top: 16px;
+        margin-left: 33%;
+        transform: translateX(-50%);
+    }
+        
+    .inputpkm{
+        width: 200px;
+        height: 30px;
+    }
+        
+    .btns{
+        margin-top: 30px;
+    }
+  
+    .inputtypes{
+        padding: 0 5px;
+        width: 100px;
+        height: 30px;
+        color: #797979;
+    }
+
+        
+    #DL{
+        top: 20px;
+        right: 20px;
+        font-size: 25px;
+    }
+
+
+}
+
+   

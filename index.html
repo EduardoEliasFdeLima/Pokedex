@@ -1,1 +1,65 @@
-sj
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="https://i.imgur.com/gRxyJtE.png" type="image/x-icon">
+</head>
+<body class="nd">
+    <main>
+        <i class="fa-solid fa-circle-half-stroke" id="DL" onclick="darkmode()"></i>
+        <div class="top">
+            <h1>Pokedex</h1>
+
+            <div class="btns">
+                <input type="text" id="Search" class="inputpkm" placeholder="Digite o nome do Pokemon:" onkeyup="filtrar()"></input>
+
+                <select name="" class="inputtypes" id="typespkm" onchange="filtrarTipo()">
+                    <option id="todos" value="todos">todos</option>
+                    <option id="grass" value="grass">grass</option>
+                    <option id="fire" value="fire">fire</option>
+                    <option id="water" value="water">water</option>
+                    <option id="bug" value="bug">bug</option>
+                    <option id="normal" value="normal">normal</option>
+                    <option id="poison" value="poison">poison</option>
+                    <option id="electric" value="electric">electric</option>
+                    <option id="ground" value="ground">ground</option>
+                    <option id="fairy" value="fairy">fairy</option>
+                    <option id="fighting" value="fighting">fighting</option>
+                    <option id="psychic" value="psychic">psychic</option>
+                    <option id="rock" value="rock">rock</option>
+                    <option id="ice" value="ice">ice</option>
+
+                </select>
+            </div>
+         
+        </div>
+
+        <div class="cards" data-js="pokedex">
+            <!-- <div class="card">
+                <div class="top-color grass">
+                    <h3>1</h3>
+                </div>
+                <div class="circleimg">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="">
+                </div>
+                <div class="text">
+                    <h2>Bulbasaur</h2>
+                    <div class="types">
+                        <span class="grass">grass</span>
+                        <span class="poison">poison</span>
+                    </div>  
+                </div>
+            </div> -->
+
+        </div>
+        
+    </main>
+    <script src="dados.js"></script>
+    <script src="dlmode.js"></script>
+    <script src="filtros.js"></script>
+</body>
+</html>
