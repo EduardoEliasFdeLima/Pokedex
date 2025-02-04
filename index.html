@@ -15,30 +15,52 @@
             <h1>Pokedex</h1>
 
             <div class="btns">
-                <input type="text" id="Search" class="inputpkm" placeholder="Digite o nome do Pokemon:" onkeyup="filtrar()"></input>
+                <input type="text" id="Search" class="inputpkm format-input" placeholder="Digite o nome do Pokemon:" onkeyup="filtrar()"></input>
 
-                <select name="" class="inputtypes" id="typespkm" onchange="filtrarTipo()">
-                    <option id="todos" value="todos">todos</option>
-                    <option id="grass" value="grass">grass</option>
-                    <option id="fire" value="fire">fire</option>
-                    <option id="water" value="water">water</option>
-                    <option id="bug" value="bug">bug</option>
-                    <option id="normal" value="normal">normal</option>
-                    <option id="poison" value="poison">poison</option>
-                    <option id="electric" value="electric">electric</option>
-                    <option id="ground" value="ground">ground</option>
-                    <option id="fairy" value="fairy">fairy</option>
-                    <option id="fighting" value="fighting">fighting</option>
-                    <option id="psychic" value="psychic">psychic</option>
-                    <option id="rock" value="rock">rock</option>
-                    <option id="ice" value="ice">ice</option>
+                <div class="types-gen">
+                    <select name="" class="inputtypes format-input" id="typespkm" onchange="filtrarTipo()">
+                        <option id="todos" value="todos">todos</option>
+                        <option id="grass" value="grass">grass</option>
+                        <option id="fire" value="fire">fire</option>
+                        <option id="water" value="water">water</option>
+                        <option id="bug" value="bug">bug</option>
+                        <option id="normal" value="normal">normal</option>
+                        <option id="poison" value="poison">poison</option>
+                        <option id="electric" value="electric">electric</option>
+                        <option id="ground" value="ground">ground</option>
+                        <option id="fairy" value="fairy">fairy</option>
+                        <option id="fighting" value="fighting">fighting</option>
+                        <option id="psychic" value="psychic">psychic</option>
+                        <option id="rock" value="rock">rock</option>
+                        <option id="ice" value="ice">ice</option>
+                        <option id="flying" value="flying">flying</option>
+                        <option id="steel" value="steel">steel</option>
+                    </select>
 
-                </select>
+                    <select name="" class="inputgens format-input" id="genspkm" onchange="filtrarGeracao()">
+                        <option id="1g" value="1g">1º gen</option>
+                        <option id="2g" value="2g">2º gen</option>
+                        <option id="3g" value="3g">3º gen</option>
+                        <option id="4g" value="4g">4º gen</option>
+                        <option id="5g" value="5g">5º gen</option>
+                        <option id="6g" value="6g">6º gen</option>
+                        <option id="7g" value="7g">7º gen</option>
+                        <option id="8g" value="8g">8º gen</option>
+                        <option id="9g" value="9g">9º gen</option>
+                    </select>
+                </div>
+              
             </div>
          
         </div>
 
+        <div class="no_results">
+            <h3 id="txt_busca">Sem resultados para ""</h3>
+        </div>
+
         <div class="cards" data-js="pokedex">
+
+          
             <!-- <div class="card">
                 <div class="top-color grass">
                     <h3>1</h3>
@@ -59,7 +81,7 @@
         
     </main>
     <script src="dados2.js"></script>
-    <script src="dlmode.js"></script>
     <script src="filtros.js"></script>
+    <script src="dlmode.js"></script>
 </body>
 </html>

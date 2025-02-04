@@ -1,0 +1,154 @@
+/***fundo do card ***/
+
+.top-color.grass{
+    background-color: #9cdb72;
+}
+
+.top-color.water{
+    background-color: #82C1FF;
+}
+
+.top-color.electric{
+    background-color: #f1ee5c;
+}
+
+.top-color.fire{
+    background-color: #e35454;
+}
+
+.top-color.poison{
+    background-color: #B695DA;
+}
+
+.top-color.bug{
+    background-color: #6a9367;
+}
+
+.top-color.normal{
+    background-color: #F7EAC5;
+}
+
+.top-color.ground{
+    background-color: #A47E50;
+}
+
+.top-color.fairy{
+    background-color: #fcbcfc;
+}
+
+.top-color.fighting{
+    background-color: #E9974A;   
+}
+
+.top-color.psychic{
+    background-color: #C867BD;
+}
+
+.top-color.rock{
+    background-color: #C6BF93;
+}
+
+.top-color.ghost{
+    background-color: #6a4b7c;
+}
+
+.top-color.ice{
+    background-color: #BEECFF;
+}
+
+.top-color.dragon{
+    background-color: #5665B0;
+}
+
+.top-color.dark{
+    background-color: #484A46;
+}
+
+
+.top-color.flying{
+    background-color: #8db3bb;
+}
+
+.top-color.steel{
+    background-color: #8ea5ae;
+}
+
+
+/*etiquetas dos tipos */
+
+span.grass{
+    background-color: #85D267;
+    
+}
+
+span.water{
+    background-color: #79b3ed;
+}
+
+span.electric{
+    background-color: #e2e076;
+}
+
+span.poison{
+    background-color: #B695DA;
+}
+
+span.fire{
+    background-color: #E16464;
+}
+
+span.poison{
+    background-color: #B463E3;
+}
+
+span.bug{
+    background-color: #596d58;
+}
+
+span.normal{
+    background-color: #dbcfa8;
+}
+
+span.ground{
+    background-color: #886842;
+}
+
+span.fairy{
+    background-color: #e4b2e4;
+}
+
+span.fighting{
+    background-color: #c5803f;
+}
+
+span.psychic{
+    background-color: #BB60B0;
+}
+
+span.rock{
+    background-color: #C6BF93;
+}
+
+span.ghost{
+    background-color: #6a4b7c;
+}
+
+span.ice{
+    background-color: #aedcf0;
+}
+
+span.dragon{
+    background-color: #505ea3;
+}
+
+span.dark{
+    background-color: #40423e;
+}
+
+span.steel{
+    background-color: #9fb6c0;
+}
+
+span.flying{
+    background-color: #8db3bb;
+}

@@ -22,8 +22,7 @@ function filtrarTipo(){
     var typ = document.getElementById('typespkm').value;
 
     var cards_agentes = document.getElementsByClassName('card');
-
-
+    
         for(i = 0; i < cards_agentes.length; i++){
             if(cards_agentes[i].innerText.includes(typ)){
                 cards_agentes[i].style.display = "flex";
@@ -36,8 +35,6 @@ function filtrarTipo(){
               
             }
         }
-
-    //alert(typ);
 
 }
 
