@@ -428,7 +428,7 @@ body.dark{
 
 }
 
-.no_results{
+#sem_result{
     margin-top: 50px;
     display: none;
 }
