@@ -4,7 +4,6 @@
 
 @import url(colors.css);
 
-
 *{
     font-family: 'Rubik';
     box-sizing: border-box;
@@ -43,14 +42,12 @@ h1{
     height: 30px;
     background-color: transparent;
     outline: none;
-   
 }
 
 .inputtypes, .inputgens{
     padding: 0 10px;
     width: 100px;
     height: 30px;
-  
     background-color: transparent;
 }
 
@@ -64,16 +61,10 @@ h1{
     width: 100%;
     height: max-content;
     display: grid;
-    /* background-color: #40423e; */
     padding-top: 30px;
-    /* padding: 20px 20px; */
- 
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     justify-content: space-between;
-    /* gap: auto; */
-    row-gap: 30px;  
-
- 
+    row-gap: 30px;   
 }
 
 .card{
@@ -109,7 +100,6 @@ h1{
     animation: floattop .2s ease-in;
 }
 
-
 @keyframes pushdown {
     50%{
         height: 48%;
@@ -132,7 +122,6 @@ h1{
   
 }
 
-
 @keyframes floatleft {
     to{
         margin-top: 0px;
@@ -141,7 +130,6 @@ h1{
     50%{
         margin-left: -10px;
     }
-  
 }
 
 .top-color h3{
@@ -156,23 +144,18 @@ h1{
 .circleimg{
     width: 140px;
     height: 140px;
-    /* background-color: #E7E7E7; */
     background-color: #e9e9e9;
     border-radius: 50%;
     position: absolute;
     margin-top: 52px;
     margin-left: 50%;
     transform: translateX(-50%);
-
-
 }
 
 .circleimg img{
     width: 100%;
     height: 100%;
 }
-
-
 
 span{
     padding:  0px 7px;
@@ -181,6 +164,29 @@ span{
     font-size: 15px;
 }
 
+.geracoes{
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 50px;
+    background-color: #b1b1b1;
+    border-radius: 0px 5px 5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns_geracoes{
+    margin-top: 50px;
+    width: 30px;
+    height: max-content;
+    background-color: #505ea3;
+}
+
+#sem_result{
+    margin-top: 50px;
+    display: none;
+}
 
 #DL{
     position: absolute;
@@ -200,8 +206,6 @@ body.dark{
     color: #b9b9b9;
 }
 
-
-
 .card.dark{
     background-color: #363838;
     -webkit-box-shadow: 0px 4px 4px 0px rgba(179, 175, 175, 0.15);
@@ -213,7 +217,6 @@ body.dark{
     text-transform: capitalize;
 }
 
-
 .titlePKM.dark {
     color: rgb(238, 236, 236);
 }
@@ -222,9 +225,7 @@ body.dark{
     background-color: #2f2f2f;
 }
 
-
 @media screen and (max-width: 1000px) {
-
     #DL{
         right: 30px;
     }
@@ -232,7 +233,6 @@ body.dark{
     .btns{
         padding-right: 0px;
     }
-
 
     body{
         padding: 30px 10px;
@@ -246,8 +246,6 @@ body.dark{
     }
 }
 
-
-
 @media screen and (max-width: 725px) {
 
     .cards{
@@ -255,9 +253,8 @@ body.dark{
         grid-template-columns: repeat(auto-fill, minmax(200px, max-content));
         row-gap: 30px;
         justify-content: space-around;
-
     }
-    
+
     .card{
         position: relative;
         width: 200px; /*230px*/
@@ -290,15 +287,11 @@ body.dark{
         font-size: 14px;
     }
 
-            
-    
     .types-gen{
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
-
-
 }
 
 @media screen and (max-width: 450px) {
@@ -329,8 +322,7 @@ body.dark{
         border-radius: 8px;
         padding-bottom: 0px;
     }
-
-        
+    
     .top-color h3{
         font-size: 24px;
     }
@@ -366,7 +358,6 @@ body.dark{
     .inputpkm{
         width: 100%;
         height: 35px;
-    
     }
         
     .btns{
@@ -377,10 +368,8 @@ body.dark{
         padding: 0 5px;
         width: 100px;
         height: 30px;
-     
     }
-
-        
+ 
     #DL{
         top: 20px;
         right: 20px;
@@ -403,32 +392,5 @@ body.dark{
         border: 1px solid #797979;
     }
 
-
 }
 
-
-.geracoes{
-    position: absolute;
-    left: 0;
-    width: 30px;
-    height: 50px;
-    background-color: #b1b1b1;
-    border-radius: 0px 5px 5px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.btns_geracoes{
-    margin-top: 50px;
-    width: 30px;
-    height: max-content;
-    background-color: #505ea3;
-
-}
-
-#sem_result{
-    margin-top: 50px;
-    display: none;
-}

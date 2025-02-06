@@ -2,7 +2,7 @@ var flag = false;
 
 function darkmode() {
     
-    var bd = document.querySelector(".nd"); // Retorna o primeiro elemento
+    var bd = document.querySelector(".nd");
     var cds = document.getElementsByClassName("card");
     var tlt = document.getElementsByClassName("titlePKM");
     var circle = document.getElementsByClassName("circleimg");
