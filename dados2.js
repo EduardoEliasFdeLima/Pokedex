@@ -44,7 +44,6 @@ const fetchPokemon = () => {
 fetchPokemon();
 
 function filtrarGeracao(){
-    load();
 
     var types = document.getElementById('typespkm');
     types.value = "todos";
