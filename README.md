@@ -8,6 +8,7 @@ Disparadamente o cartão número 13 foi o que ganhou a galera (embora eu tenha v
 Enfim foi um projeto bem legal de fazer, principalemente na hora de coletar as opiniões dos estilos dos cards
 
 Fiz todos os estilos pelo figma, segue eles abaixo:<br>
-<img src="(https://github.com/user-attachments/assets/9daeee70-8984-4ca2-ba9c-5ac05ce77410" width="300">
+![image](https://github.com/user-attachments/assets/97e6b5d8-0699-4a73-9ccf-d648b7be5dee)
+
 
 E ai? teve algum card diferente que gostou?
