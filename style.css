@@ -71,7 +71,6 @@ h1{
     position: relative;
     width: 230px;
     height: 310px;
-    background-color: #F7F7F7;
     background-color: #fffbfb;
     border-radius: 5px;
     -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
@@ -239,7 +238,6 @@ body.dark{
     }
 
     .cards{
-        background-color: transparent;
         grid-template-columns: repeat(auto-fill, minmax(230px, max-content));
         gap: 0px;
         row-gap: 30px;
@@ -249,14 +247,12 @@ body.dark{
 @media screen and (max-width: 725px) {
 
     .cards{
-        background-color: transparent;
         grid-template-columns: repeat(auto-fill, minmax(200px, max-content));
         row-gap: 30px;
         justify-content: space-around;
     }
 
     .card{
-        position: relative;
         width: 200px; /*230px*/
         height: 275px; /*310px*/
         padding-bottom: 25px;
@@ -305,7 +301,6 @@ body.dark{
     }
 
     .cards{
-        background-color: transparent;
         grid-template-columns: repeat(auto-fill, minmax(100%,1fr));
         gap: 0px;
         row-gap: 30px;
@@ -316,7 +311,6 @@ body.dark{
     .card{
         display: flex;
         flex-direction: row;
-        position: relative;
         width: 100%; /*230px*/
         height: 130px; /*310px*/
         border-radius: 8px;
@@ -386,10 +380,6 @@ body.dark{
         display: flex;
         flex-direction: row;
         gap: 15px;
-    }
-
-    .format-input{
-        border: 1px solid #797979;
     }
 
 }

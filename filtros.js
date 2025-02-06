@@ -1,4 +1,4 @@
-function filtrar(){
+function filtrar(){ //filtro pela pesquisa do input
     var semR = document.getElementById('sem_result');
         
     var input = document.getElementById("Search"); 
@@ -31,7 +31,7 @@ function filtrar(){
 }
 
 
-function filtrarTipo(){
+function filtrarTipo(){ //filtro pelo select do tipo de pokemon
     var typ = document.getElementById('typespkm').value;
 
     var cards_agentes = document.getElementsByClassName('card');
@@ -51,13 +51,63 @@ function filtrarTipo(){
     clear();
 }
 
-function resetCards(){
+function resetCards(){ //volta os cards pra visiveis
     var cards_agentes = document.getElementsByClassName('card');
 
     for(i = 0; i < cards_agentes.length; i++){
         cards_agentes[i].style.display = "flex";
     }
 }
+
+
+function filtrarGeracao(){ //filtro pra geração
+
+    var types = document.getElementById('typespkm');
+    types.value = "todos";
+    var generation = document.getElementById('genspkm').value;
+
+    switch(generation){
+        case "1g": 
+            N1 = 0;
+            N2 = 1;
+            break;
+        case "2g":
+            N1 = 2;
+            N2 = 3;
+            break;
+        case "3g":
+            N1 = 4;
+            N2 = 5;
+            break;
+        case "4g":
+            N1 = 6;
+            N2 = 7;
+            break;
+        case "5g":
+            N1 = 8;
+            N2 = 9;
+            break;
+        case "6g":
+            N1 = 10;
+            N2 = 11;
+            break;
+        case "7g":
+            N1 = 12;
+            N2 = 13;
+            break;
+        case "8g":
+            N1 = 14;
+            N2 = 15;
+            break;
+        case "9g":
+            N1 = 16;
+            N2 = 17;
+    }
+    
+    fetchPokemon();
+    clear();
+}
+
 
 function clear(){
     var input = document.getElementById("Search");
