@@ -102,6 +102,11 @@ function filtrarGeracao(){ //filtro pra geração
         case "9g":
             N1 = 16;
             N2 = 17;
+            break;
+        case "all":
+            N1 = 0;
+            N2 = 17;
+            break;
     }
     
     fetchPokemon();
